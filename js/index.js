@@ -55,6 +55,16 @@ navlist[3].textContent= siteContent["nav"]["nav-item-4"];
 navlist[4].textContent= siteContent["nav"]["nav-item-5"];
 navlist[5].textContent= siteContent["nav"]["nav-item-6"];
 //Task 3
+const link1 = document.createElement("a");
+const newnavitem = document.querySelector("nav");
+link1.style.color= "green";
+link1.textContent = "Sales";
+newnavitem.appendChild(link1);
+const link2 = document.createElement("a")
+link2.textContent = "Intro";
+link2.style.color = "Green"
+newnavitem.prepend(link2);
+
 navlist.forEach((element) => element.style.color = 'green')
 
 
@@ -85,6 +95,3 @@ para[7].textContent = siteContent["contact"]["email"]
 para[8].textContent = siteContent["footer"]["copyright"]
 
 
-const link1 = document.createElement("a");
-link1.textContent = "Sales";
-navlist.appendChild(link1);
